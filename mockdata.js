@@ -5,8 +5,8 @@ var db = {books:[]};
 
 for
     (   
-        var i   =101; 
-            i   <=115; 
+        var i   =   101; 
+            i   <=  115; 
             i   ++
     )
 {
