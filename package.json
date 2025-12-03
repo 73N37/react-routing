@@ -7,7 +7,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "backend": "json-server -p 4000 --watch booksdb.json",
+    "backend": "json-server -p 4000 --watch usersdb.json",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"

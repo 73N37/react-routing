@@ -1,0 +1,94 @@
+{
+  "user": [
+    {
+      "id": 101,
+      "login": "Kuvalis.Haylee",
+      "password": "0Breana14",
+      "roles": "editor"
+    },
+    {
+      "id": 102,
+      "login": "Breana_Veum",
+      "password": "6Sophia07",
+      "roles": "user"
+    },
+    {
+      "id": 103,
+      "login": "Mohammad.Barrows",
+      "password": "4Olaf88",
+      "roles": "user"
+    },
+    {
+      "id": 104,
+      "login": "Saul_Christiansen",
+      "password": "9Titus85",
+      "roles": "editor"
+    },
+    {
+      "id": 105,
+      "login": "Lemke.Constantin",
+      "password": "9Ocie78",
+      "roles": "admin"
+    },
+    {
+      "id": 106,
+      "login": "Tremblay_Stephanie",
+      "password": "4Robert22",
+      "roles": "admin"
+    },
+    {
+      "id": 107,
+      "login": "Sipes_Sibyl",
+      "password": "5Oceane38",
+      "roles": "editor"
+    },
+    {
+      "id": 108,
+      "login": "Alessandra.Spinka",
+      "password": "5Simeon48",
+      "roles": "admin"
+    },
+    {
+      "id": 109,
+      "login": "Geovany_Toy",
+      "password": "9Nakia12",
+      "roles": "admin"
+    },
+    {
+      "id": 110,
+      "login": "Kaycee_Hahn",
+      "password": "3Theodora37",
+      "roles": "admin"
+    },
+    {
+      "id": 111,
+      "login": "Hahn.Rhoda",
+      "password": "1Celia72",
+      "roles": "editor"
+    },
+    {
+      "id": 112,
+      "login": "Giuseppe.Towne",
+      "password": "5Bert01",
+      "roles": "admin"
+    },
+    {
+      "id": 113,
+      "login": "Wuckert_Kirstin",
+      "password": "8Benjamin74",
+      "roles": "admin"
+    },
+    {
+      "id": 114,
+      "login": "Lysanne_Feeney",
+      "password": "0Jarod20",
+      "roles": "admin"
+    },
+    {
+      "id": 115,
+      "login": "Carlie_Kessler",
+      "password": "7Tania04",
+      "roles": "admin"
+    }
+  ]
+}
