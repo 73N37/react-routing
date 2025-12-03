@@ -1,10 +1,26 @@
+import { useState, useEffect } from 'react';
 import styles from './App.module.css';
+import ThemeToggle from './ThemeToggle';
 
-export default function App() {
+function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Welcome to CSS Modules</h1>
-      <button className={styles.button}>Click me</button>
+    <div className={styles.app}>
+      <h1>Hello React</h1>
+      <p>This app uses CSS variables for a scalable theme system.</p>
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      <div className={styles.card}>Themed content box</div>
     </div>
   );
 }
+
+export default App;
