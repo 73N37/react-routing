@@ -5,12 +5,19 @@ import Layout from './components/Layout';
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:4000/user')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("Failed to connect to the server");
+        return res.json();
+      })
       .then(data => setUsers(data))
-      .catch(err => console.error("Failed to fetch users", err));
+      .catch(err => {
+        console.error("Failed to fetch users", err);
+        setError("Could not load users. Is the backend running?");
+      });
   }, []);
 
   return (
@@ -22,6 +29,7 @@ function App() {
 
       <section className={styles.section}>
         <h2>User Directory</h2>
+        {error && <div style={{ color: 'red', padding: '1rem', background: '#ffe6e6', borderRadius: '4px' }}>{error}</div>}
         <div className={styles.grid}>
           {users.map(user => (
             <Link to={`/user/${user.id}`} key={user.id} className={styles.card}>
